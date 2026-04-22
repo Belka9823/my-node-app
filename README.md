@@ -174,7 +174,7 @@ docker run --rm -v "$(pwd):/app" -w /app node:18-alpine npm install --package-lo
 - Перейдите на вкладку **Actions** в вашем репозитории на **GitHub**. Вы увидите, как ваш **Workflow** запустился, а через несколько минут загорится **зеленая** галочка, которая означает, что все шаги прошли успешно
 - Если ваш **Workflow** стал красным - исправьте ошибки и запуштесь снова
 
-![Скрин](/content/DevOps/CI_CD/img/4_workflow.png)
+<img width="1452" height="175" alt="изображение" src="https://github.com/user-attachments/assets/201e73ca-d159-4f33-b6d4-63e4b93aa503" />
 
 ### 7. Проверить сборку Docker-образа локально
 
@@ -184,14 +184,17 @@ docker run --rm -v "$(pwd):/app" -w /app node:18-alpine npm install --package-lo
 ```shell
 docker build -t my-node-app:latest .
 ```
+
+<img width="841" height="151" alt="изображение" src="https://github.com/user-attachments/assets/35fdfcad-cf49-42a0-b965-db3470e4c4ac" />
+
 Создание и запуск контейнера:
 ```shell
 docker run --rm my-node-app:latest
 ```
 
-Вы увидите вывод: `Hello from Node.js app!`
+<img width="418" height="83" alt="изображение" src="https://github.com/user-attachments/assets/b1f83072-f6a8-4ac8-a560-ec17c3ba69e2" />
 
-![Hello from my Python app!](/content/DevOps/CI_CD/img/3_workflow.png)
+Вы увидите вывод: `Hello from Node.js app!`
 
 Опционально вы можете зайти в интерактивный режим контейнера для ознакомления и отладки:
 ```shell
